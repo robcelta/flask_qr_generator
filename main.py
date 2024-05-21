@@ -3,7 +3,7 @@ import qrcode
 from io import BytesIO
 from base64 import b64encode
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templates')
 
 @app.route('/')
 def home(): 
